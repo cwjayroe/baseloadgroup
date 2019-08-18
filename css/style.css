@@ -1,3 +1,190 @@
+.featured-text-right {
+  padding: 0 0 0 2rem;
+  border-left: .5rem solid #f26625;
+}
+.featured-text-left {
+  padding: 0 2rem 0 0;
+  border-right: .5rem solid #f26625;
+}
+
+.card-box {
+  position: relative;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  margin-bottom: 2.5rem;
+}
+.card-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.card-header .title-2 {
+  margin-bottom: 0;
+  padding: .6rem 0;
+  font-size: 1.5rem;
+}
+.card-header .title-2 a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+/*--------------------------------------------------------------
+# Banner
+--------------------------------------------------------------*/
+
+.banner-title {
+  background: no-repeat center center;
+  background-color: #868e96;
+  background-attachment: scroll;
+  position: relative;
+  background-size: cover;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #212529;
+  opacity: 0.5;
+}
+
+.banner-site-heading {
+  padding: 200px 0 150px;
+  color: white;
+}
+
+.banner-site-heading {
+  text-align: center;
+}
+
+.banner-subheading {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.1;
+  display: block;
+  margin: 10px 0 0;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.banner-h1 {
+  font-size: 35px;
+}
+
+.banner-subheading {
+  line-height: 1.1;
+  display: block;
+}
+
+.banner-subheading {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 10px 0 30px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+header.masthead .post-heading .meta {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  font-family: 'Lora', 'Times New Roman', serif;
+}
+
+@media only screen and (min-width: 768px) {
+  header.masthead .page-heading h1,
+  header.masthead .site-heading h1 {
+    font-size: 80px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .banner-site-heading {
+    padding: 200px 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .banner-h1 {
+    font-size: 55px;
+  }
+  .banner-subheading {
+    font-size: 30px;
+  }
+}
+
+/*--------------------------------------------------------------
+# End banner
+--------------------------------------------------------------*/
+
+.masthead {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.masthead video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.masthead .container {
+  position: relative;
+  z-index: 2;
+}
+
+.masthead .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+
+
+
+.bg-dark {
+  background-color: #000
+}
+
+
+
+
+
+
+
+
+
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -13,6 +200,28 @@ a {
   transition: 0.5s;
 }
 
+.primary-color {
+  color: #f26625;
+}
+
+.primary-bg-color {
+  background-color: #f26625;
+  border-color:#f26625
+}
+
+.primary-btn {
+  background-color: #f26625;
+  border-color:#f26625;
+  color:white
+}
+
+.primary-btn:hover {
+  background-color: gray;
+  border-color:Gray;
+  color:#f26625
+}
+
+
 a:hover,
 a:active,
 a:focus {
@@ -23,7 +232,7 @@ a:focus {
 
 p {
   padding: 0;
-  margin: 0 0 30px 0;
+  margin: 0 0 15px 0;
 }
 
 h1,
@@ -64,7 +273,7 @@ h6 {
 
 /* Prelaoder */
 
-#preloader {
+/* #preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -111,7 +320,7 @@ h6 {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Header
@@ -583,6 +792,33 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #333;
 }
 
+.section-subheader h3 {
+  font-size: 26px;
+  color: #f26625;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.section-subheader h3::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-subheader p {
+  text-align: center;
+  padding-bottom: 30px;
+  color: #333;
+}
+
 /* Section with background
 --------------------------------*/
 
@@ -633,17 +869,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
 }
 
-/* About Us Section
+/* What We Provide Section
 --------------------------------*/
 
-#about {
+#provide {
   background: url("../img/about-bg.jpg") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 40px 0;
   position: relative;
 }
 
-#about::before {
+#provide::before {
   content: '';
   position: absolute;
   left: 0;
@@ -654,27 +890,27 @@ body.mobile-nav-active #mobile-nav-toggle {
   z-index: 9;
 }
 
-#about .container {
+#provide .container {
   position: relative;
   z-index: 10;
 }
 
-#about .about-col {
+#provide .about-col {
   background: #fff;
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
   margin-bottom: 20px;
 }
 
-#about .about-col .img {
+#provide .about-col .img {
   position: relative;
 }
 
-#about .about-col .img img {
+#provide .about-col .img img {
   border-radius: 4px 4px 0 0;
 }
 
-#about .about-col .icon {
+#provide .about-col .icon {
   width: 64px;
   height: 64px;
   padding-top: 8px;
@@ -689,22 +925,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.3s;
 }
 
-#about .about-col i {
+#provide .about-col i {
   font-size: 36px;
   line-height: 1;
   color: #fff;
   transition: 0.3s;
 }
 
-#about .about-col:hover .icon {
+#provide .about-col:hover .icon {
   background-color: #fff;
 }
 
-#about .about-col:hover i {
+#provide .about-col:hover i {
   color: #f26625;
 }
 
-#about .about-col h2 {
+#provide .about-col h2 {
   color: #000;
   text-align: center;
   font-weight: 700;
@@ -713,15 +949,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 40px 0 12px 0;
 }
 
-#about .about-col h2 a {
+#provide .about-col h2 a {
   color: #000;
 }
 
-#about .about-col h2 a:hover {
+#provide .about-col h2 a:hover {
   color: #f26625;
 }
 
-#about .about-col p {
+#provide .about-col p {
   font-size: 14px;
   line-height: 24px;
   color: #333;
