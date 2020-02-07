@@ -8,7 +8,7 @@ try {
     $organization = $_POST['formOrganization'];
 
     if(!empty($from) && !empty($phone) & !empty($firstName) & !empty($lastName) & !empty($comments) & !empty($organization)){
-        $to = "sjayroe@exlog-global.com";
+        $to = "admin@exlog-global.com";
         $subject = "New Web Form submission";
         $body = "Web form filled out by: " . $firstName . " ". $lastName . " with " . $organization . "\r\nEmail address: " . $from . "\r\nPhone #: " . $phone . "\r\nComments: " . $comments;
         $headers = "From:" . $from;
